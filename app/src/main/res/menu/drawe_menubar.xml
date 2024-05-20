@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mHome"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/mSetting"
+        android:icon="@drawable/settings"
+        android:title="Setting"/>
+    <item
+        android:id="@+id/mContectus"
+        android:icon="@drawable/call"
+        android:title="Contact Us"/>
+    <item
+        android:id="@+id/mHelp"
+        android:icon="@drawable/help_circle"
+        android:title="Help"/>
+</menu>
