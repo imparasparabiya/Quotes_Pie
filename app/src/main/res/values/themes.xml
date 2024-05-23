@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.QuotesPie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-<!--         <item name="colorPrimary">@color/light_purple</item>-->
+         <item name="colorPrimary">@color/light_purple</item>
     </style>
+
 
     <style name="Theme.QuotesPie" parent="Base.Theme.QuotesPie" />
 </resources>

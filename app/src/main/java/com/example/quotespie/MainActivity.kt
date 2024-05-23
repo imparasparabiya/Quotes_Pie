@@ -12,15 +12,20 @@ import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.quotespie.Adapter.Quotes_Adapter
 import com.example.quotespie.databinding.ActivityMainBinding
 import com.example.quotespie.fregment.HomeFragment
 import com.example.quotespie.fregment.ProfileFragment
 import com.example.quotespie.fregment.SaveFragment
+import com.example.quotespie.modal_class.Quotes_ModalClass
 import com.google.android.material.navigation.NavigationView
 
 lateinit var binding: ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -50,14 +55,13 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
                     fragmentreples(HomeFragment())
                     true
                 }
-                R.id.btm_Home -> {
-//                   val intent = Intent(this, ProfileFragment::class.java)
+                R.id.btm_Profile -> {
+//                   val intent = Intent(this@MainActivity, ProfileFragment::class.java)
 //                    startActivity(intent)
                     fragmentreples(ProfileFragment())
                     true
                 }
                 else -> false
-
             }
         }
     }
@@ -77,31 +81,34 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     }
 
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
-       return when (p0.itemId){
-           R.id.mHome -> {
-               binding.main.closeDrawer(GravityCompat.START)
-               Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
-               true
-           }
+        binding.drawebalManu.setNavigationItemSelectedListener {
+           when (p0.itemId){
+                R.id.mHome -> {
+                    binding.main.closeDrawer(GravityCompat.START)
+                    Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+                    true
+                }
 
-           R.id.mSetting -> {
-               Toast.makeText(this, "Setting", Toast.LENGTH_SHORT).show()
-               true
-           }
+                R.id.mSetting -> {
+                    Toast.makeText(this, "Setting", Toast.LENGTH_SHORT).show()
+                    true
+                }
 
-           R.id.mContectus -> {
-               Toast.makeText(this, "Contact Us", Toast.LENGTH_SHORT).show()
-               true
-           }
+                R.id.mContectus -> {
+                    Toast.makeText(this, "Contact Us", Toast.LENGTH_SHORT).show()
+                    true
+                }
 
-           R.id.mHelp -> {
-               Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show()
-               true
-           }
+                R.id.mHelp -> {
+                    Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show()
+                    true
+                }
 
-           else -> {
-               false
-           }
-       }
+                else -> {
+                    false
+                }
+            }
+        }
+        return true
    }
 }
