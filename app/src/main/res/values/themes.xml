@@ -5,6 +5,12 @@
          <item name="colorPrimary">@color/light_purple</item>
     </style>
 
+    <style name="titleText">
+        <item name="android:textColor">@color/dark_purole</item>
+    </style>
+    <style name="subTitleText">
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="Theme.QuotesPie" parent="Base.Theme.QuotesPie" />
 </resources>

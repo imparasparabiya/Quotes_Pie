@@ -26,6 +26,7 @@
                 android:layout_height="24sp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
+                style="@style/Theme.AppCompat"
                 android:src="@drawable/menu" />
 
             <TextView
@@ -35,8 +36,8 @@
                 android:layout_margin="10sp"
                 android:text="@string/app_name"
                 android:textAlignment="center"
-                android:textColor="@color/black"
                 android:textSize="20sp"
+                style="@style/Theme.AppCompat"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -68,6 +69,7 @@
                 app:itemTextAppearanceActive="@color/black"
                 app:itemRippleColor="@color/dark_purole"
                 app:itemIconTint="@color/white"
+                style="@style/Theme.AppCompat"
                 app:itemTextColor="@color/dark_purole"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/bottum_bar" />

@@ -2,6 +2,12 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.QuotesPie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-         <item name="colorPrimary">@color/dark_purole</item>
+<!--         <item name="colorPrimary">@color/dark_purole</item>-->
+    </style>
+    <style name="titleText">
+        <item name="android:textColor">@color/light_purple</item>
+    </style>
+    <style name="subTitleText">
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

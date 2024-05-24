@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             insets
         }
 
+        
         val homeFragment = HomeFragment()
         fragmentreples(homeFragment)
         initDrawebalManu()
@@ -103,6 +105,29 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
                     Toast.makeText(this, "Help", Toast.LENGTH_SHORT).show()
                     true
                 }
+//               R.id.btnThemes -> {
+//                   // Handle theme mode change here
+//                        //val mode =  AppCompatDelegate.getDefaultNightMode()
+//                   // Update the night mode
+////                        val newMode = if (mode == AppCompatDelegate.MODE_NIGHT_YES){
+////                            AppCompatDelegate.MODE_NIGHT_NO
+////                        }else{
+////                            AppCompatDelegate.MODE_NIGHT_YES
+////                        }
+////                        AppCompatDelegate.setDefaultNightMode(newMode)
+//                   p0.isChecked = !p0.isChecked
+//                   if (p0.isChecked) {
+//                       // Dark mode
+//                       Quotes_Themes.changeThemes(true)
+//                       AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+//                   } else {
+//                       // Light mode
+//                       Quotes_Themes.changeThemes(false)
+//                       AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+//                   }
+//                   binding.main.closeDrawer(GravityCompat.START)
+//                        true
+//               }
 
                 else -> {
                     false

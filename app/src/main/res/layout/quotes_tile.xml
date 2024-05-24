@@ -27,18 +27,18 @@
                     android:id="@+id/quotesback_img"
                     android:layout_width="match_parent"
                     android:layout_height="300sp"
-                    android:src="#F7E6FD"
-                    android:contentDescription="TODO" />
+                    android:contentDescription="TODO"
+                    android:src="#F7E6FD" />
 
                 <TextView
                     android:id="@+id/txtqoutes"
+                    style="@style/Theme.AppCompat"
                     android:layout_width="280dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Love"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/txtname"
@@ -46,9 +46,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:layout_marginStart="225sp"
-                    android:textColor="@color/black"
                     android:layout_marginBottom="50dp"
-                    android:text="Name" />
+                    android:text="Name"
+                    style="@style/Theme.AppCompat" />
 
             </androidx.cardview.widget.CardView>
 
@@ -61,72 +61,79 @@
                 android:padding="10sp">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btnlike"
                     android:layout_width="70sp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/btnlike"
                     android:layout_gravity="center"
                     app:cardCornerRadius="5sp">
 
                     <ImageView
                         android:id="@+id/imglike"
+                        style="@style/Theme.AppCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8sp"
                         android:src="@drawable/heart" />
 
                     <TextView
+                        style="@style/Theme.AppCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="35sp"
-                        android:textColor="@color/black"
-                        android:text="Like" />
+                        android:text="Like"
+                        android:textColor="@color/black" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="70sp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="25sp"
                     android:id="@+id/btnsave"
+                    android:layout_width="70sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25sp"
                     app:cardCornerRadius="5sp">
-                <ImageView
-                    android:id="@+id/imgsave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8sp"
-                    android:src="@drawable/bookmark" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="35sp"
-                    android:textColor="@color/black"
-                    android:text="Save" />
+                    <ImageView
+                        android:id="@+id/imgsave"
+                        style="@style/Theme.AppCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8sp"
+                        android:src="@drawable/bookmark" />
+
+                    <TextView
+                        style="@style/Theme.AppCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35sp"
+                        android:text="Save"
+                        android:textColor="@color/black" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btnshare"
                     android:layout_width="70sp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25sp"
                     android:layout_gravity="center"
-                    android:id="@+id/btnshare"
+                    android:layout_marginStart="25sp"
                     app:cardCornerRadius="5sp">
 
-                <ImageView
-                    android:id="@+id/imgshare"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5sp"
-                    android:src="@drawable/share_2" />
+                    <ImageView
+                        android:id="@+id/imgshare"
+                        style="@style/Theme.AppCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:src="@drawable/share_2" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30sp"
-                    android:textColor="@color/black"
-                    android:text="Share" />
+                    <TextView
+                        style="@style/Theme.AppCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30sp"
+                        android:text="Share"
+                        android:textColor="@color/black" />
 
                 </androidx.cardview.widget.CardView>
 

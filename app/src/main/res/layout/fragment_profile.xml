@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_margin="15sp"
+    android:orientation="vertical"
     tools:context=".fregment.ProfileFragment">
 
     <LinearLayout
@@ -96,7 +96,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Photos"
-                    android:textColor="@color/black"
+                    style="@style/Theme.AppCompat"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -127,8 +127,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Followers"
-                    android:textColor="@color/black"
                     android:textSize="20sp"
+                    style="@style/Theme.AppCompat"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -157,7 +157,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Following"
-                    android:textColor="@color/black"
+                    style="@style/Theme.AppCompat"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -181,6 +181,21 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="Theme Mode"
+            android:textColor="@color/dark_purole"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/btnThemes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:useMaterialThemeColors="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
             android:text="Personal Details"
             android:textColor="@color/dark_purole"
@@ -199,8 +214,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
+            style="@style/Theme.AppCompat"
             android:text="Business Man"
-            android:textColor="@color/black" />
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -215,8 +231,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
+            style="@style/Theme.AppCompat"
             android:text="+91 90999 14960"
-            android:textColor="@color/black" />
+           />
 
         <TextView
             android:layout_width="match_parent"
@@ -232,7 +249,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
             android:text="Surat"
-            android:textColor="@color/black" />
+            style="@style/Theme.AppCompat"
+             />
 
         <TextView
             android:layout_width="match_parent"
@@ -247,8 +265,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
+            style="@style/Theme.AppCompat"
             android:text="princesadhu999@gmail.com"
-            android:textColor="@color/black" />
+             />
 
     </LinearLayout>
 
