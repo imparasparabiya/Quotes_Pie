@@ -60,82 +60,30 @@
                 android:orientation="horizontal"
                 android:padding="10sp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/btnlike"
-                    android:layout_width="70sp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    app:cardCornerRadius="5sp">
-
                     <ImageView
                         android:id="@+id/imglike"
                         style="@style/Theme.AppCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8sp"
                         android:src="@drawable/heart" />
-
-                    <TextView
-                        style="@style/Theme.AppCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="35sp"
-                        android:text="Like"
-                        android:textColor="@color/black" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/btnsave"
-                    android:layout_width="70sp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="25sp"
-                    app:cardCornerRadius="5sp">
 
                     <ImageView
                         android:id="@+id/imgsave"
                         style="@style/Theme.AppCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8sp"
+                        android:layout_marginStart="50sp"
+                        android:clickable="true"
                         android:src="@drawable/bookmark" />
-
-                    <TextView
-                        style="@style/Theme.AppCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="35sp"
-                        android:text="Save"
-                        android:textColor="@color/black" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/btnshare"
-                    android:layout_width="70sp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="25sp"
-                    app:cardCornerRadius="5sp">
 
                     <ImageView
                         android:id="@+id/imgshare"
                         style="@style/Theme.AppCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5sp"
+                        android:layout_marginStart="50sp"
                         android:src="@drawable/share_2" />
 
-                    <TextView
-                        style="@style/Theme.AppCompat"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30sp"
-                        android:text="Share"
-                        android:textColor="@color/black" />
-
-                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
         </LinearLayout>

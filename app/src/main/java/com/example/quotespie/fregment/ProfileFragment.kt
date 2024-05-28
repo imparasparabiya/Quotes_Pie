@@ -28,10 +28,12 @@ class ProfileFragment : Fragment() {
         bindingProfile.btnThemes.setOnCheckedChangeListener { buttonView, isChecked ->
 
             if (isChecked) {
+
                 //Dark Mode
                 Quotes_Themes.changeThemes(isChecked)
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             } else {
+
                 //Light Mode
                 Quotes_Themes.changeThemes(isChecked)
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)

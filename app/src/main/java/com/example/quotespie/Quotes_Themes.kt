@@ -28,7 +28,7 @@ class Quotes_Themes : Application() {
 
     private fun initShared() {
             sp =getSharedPreferences("themes", MODE_PRIVATE)
-    }
+        }
     }
 
     @SuppressLint("SuspiciousIndentation")

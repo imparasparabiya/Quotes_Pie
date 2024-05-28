@@ -109,12 +109,12 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 //                   // Handle theme mode change here
 //                        //val mode =  AppCompatDelegate.getDefaultNightMode()
 //                   // Update the night mode
-////                        val newMode = if (mode == AppCompatDelegate.MODE_NIGHT_YES){
-////                            AppCompatDelegate.MODE_NIGHT_NO
-////                        }else{
-////                            AppCompatDelegate.MODE_NIGHT_YES
-////                        }
-////                        AppCompatDelegate.setDefaultNightMode(newMode)
+//                        val newMode = if (mode == AppCompatDelegate.MODE_NIGHT_YES){
+//                            AppCompatDelegate.MODE_NIGHT_NO
+//                        }else{
+//                            AppCompatDelegate.MODE_NIGHT_YES
+//                        }
+//                        AppCompatDelegate.setDefaultNightMode(newMode)
 //                   p0.isChecked = !p0.isChecked
 //                   if (p0.isChecked) {
 //                       // Dark mode

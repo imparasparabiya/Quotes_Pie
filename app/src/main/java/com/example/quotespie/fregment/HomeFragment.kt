@@ -5,19 +5,23 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.quotespie.Adapter.Quotes_Adapter
-import com.example.quotespie.R
 import com.example.quotespie.databinding.FragmentHomeBinding
 import com.example.quotespie.modal_class.Quotes_ModalClass
 
 lateinit var homeBinding: FragmentHomeBinding
 var quotesModalclass = ArrayList<Quotes_ModalClass>()
+
 class HomeFragment : Fragment() {
 
+  //  lateinit var db: DBhelper
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View? {
-        homeBinding = FragmentHomeBinding.inflate(inflater,container,false) //InflateThe Bindding Object
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View? {
+        homeBinding =
+            FragmentHomeBinding.inflate(inflater, container, false) //InflateThe Binding Object
+
         // Inflate the layout for this fragment
 
         // Qoutes
@@ -35,7 +39,7 @@ class HomeFragment : Fragment() {
         )
         // Author Name
         val qoutes_authorname = arrayOf(
-        "- Robert Collier",
+            "- Robert Collier",
             " - Albert Schweitzer",
             "- Albert Einstein",
             "- Winston Churchill",
@@ -48,20 +52,25 @@ class HomeFragment : Fragment() {
         )
 
         // Modal Class For Loop
-        for (i in qoutes_pie.indices){
-            val qoutes = Quotes_ModalClass(qoutes_pie[i],qoutes_authorname[i])
+        for (i in qoutes_pie.indices) {
+            val qoutes =
+                Quotes_ModalClass(qoutes_pie[i], qoutes_authorname[i], "Author 1", false, id)
             quotesModalclass.add(qoutes)
         }
 
-        val quotesAdapter = Quotes_Adapter(requireContext(), quotesModalclass) // Adapeter : Note the Corrected Adapter Name
-        val layoutManager = GridLayoutManager(requireContext(),1)
 
+
+        val quotesAdapter = Quotes_Adapter(
+            requireContext(),
+            quotesModalclass
+        ) // Adapeter : Note the Corrected Adapter Name
+        // val layoutManager = GridLayoutManager(requireContext(),1)
+        var layoutManager = LinearLayoutManager(requireContext())
         homeBinding.rvdata.layoutManager = layoutManager
         homeBinding.rvdata.adapter = quotesAdapter
 
-
-
         return homeBinding.root // Return the root view of the binding object
     }
+
 
 }
